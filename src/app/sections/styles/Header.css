@@ -1,0 +1,28 @@
+.slide1Bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+      url('/images/slide1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .slide2Bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+      url('/images/slide2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ 
+
+  .slideContentBg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url('/images/why-choose-us-bg-img.png');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  .swiper-button-prev::after,
+.swiper-button-next::after {
+  color: white !important;
+}

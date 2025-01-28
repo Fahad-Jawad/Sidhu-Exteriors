@@ -10,6 +10,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary:'#02AFEF',
+        primaryExtraLight:'#f7fcfe',
+        secondary:'#2E3A97'
+      },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
       },
     },
   },

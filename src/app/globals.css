@@ -11,6 +11,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary:"#02AFEF";
   }
 }
 
@@ -18,4 +19,134 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.underline-animation {
+  position: relative;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+}
+
+.underline-animation-white {
+  position: relative;
+}
+
+.underline-animation-white::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-animation-white:hover::after {
+  width: 100%;
+}
+
+/* Initial state of the dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #4a4a4a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* Show the dropdown when hovering over the parent element */
+.group:hover .dropdown-menu {
+  opacity: 1; /* Fade in */
+  transform: translateY(0px); /* Slide up into view */
+  pointer-events: auto; /* Enable interaction with the dropdown */
+}
+
+/* Hover effect for links */
+.dropdown-menu a {
+  padding: 8px 16px;
+  display: block;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.dropdown-menu a:hover {
+  color: white;
+}
+
+.logoPart{
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+
+}
+
+.aboutImgSide::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: url("/images/aboutBg.png");
+  background-size:auto;
+  background-repeat: repeat;
+  aspect-ratio: 16/9;
+
+}
+
+.gradient-text {
+  font-size: 80px; /* Adjust size as needed */
+  font-weight: bold;
+  background: linear-gradient(to bottom, #02AFEF, rgba(2, 175, 239, 0.05));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+.underline-animation {
+  position: relative;
+}
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #02AFEF;
+  transition: width 0.3s ease-in-out;
+}
+.underline-animation:hover::after {
+  width: 100%;
 }
