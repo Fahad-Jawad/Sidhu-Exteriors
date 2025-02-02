@@ -1,7 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import TopBar from "./sections/TopBar";
+import Footer from "./sections/Footer";
+import ContactUs from "./sections/ContactUs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,10 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
@@ -22,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} antialiased`}
       >
         <div className="sticky top-0 z-50">
         <TopBar />
@@ -30,6 +36,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         </div>
         {children}
+        <ContactUs />
+        <Footer />
       </body>
     </html>
   );

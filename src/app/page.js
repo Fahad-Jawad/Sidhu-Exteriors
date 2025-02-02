@@ -4,6 +4,10 @@ import AboutUs from "./sections/AboutUs";
 import Services from "./sections/Services";
 import WhyChooseUs from "./sections/WhyChooseUs";
 import WorkingAreas from "./sections/WorkingAreas";
+import StatsSection from "./sections/StatsSection";
+import Testimonials from "./sections/Testimonials";
+import ContactUs from "./sections/ContactUs";
+import AttachedSection from "./sections/AttachedSection";
 
 export default function Home() {
   return (
@@ -13,6 +17,9 @@ export default function Home() {
    <Services />
    <WhyChooseUs />
    <WorkingAreas />
+   <AttachedSection />
+   <StatsSection />
+   <Testimonials />
    </>
   );
 }

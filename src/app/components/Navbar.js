@@ -33,54 +33,30 @@ export default function Navbar() {
         <div className='container mx-auto lg:px-4 flex items-center justify-between h-16'>
           {/* Desktop Nav */}
           <div className='flex items-center justify-between w-full'>
-          <div className='hidden xl:flex items-center space-x-8 text-base'>
-            <Link href='/' className=' py-3 underline-animation'>
-              Home
-            </Link>
-            <Link href='/about-us' className='py-3 underline-animation'>
-              About Us
-            </Link>
-
-            <Link href='/services' className='py-3 underline-animation'>
-              Our Services
-            </Link>
-
-            <Link href='/projects' className=' py-3 underline-animation'>
-              Projects
-            </Link>
-
-            <Link href='/contact-us' className=' py-3 underline-animation'>
-              Contact Us
-            </Link>
-         
-          </div>
-          <div className='hidden md:flex justify-end'>
-              <div className='flex items-center space-x-4'>
-                <a
-                  href='https://facebook.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    src='/images/icons/FacebookWhite.svg'
-                    alt='Facebook'
-                    className='h-8 w-8'
-                  />
-                </a>
-
-                <a
-                  href='https://instagram.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <img
-                    src='/images/icons/InstaWhite.svg'
-                    alt='Instagram'
-                    className='h-8 w-8'
-                  />
-                </a>
-              </div>
+            <div className='hidden xl:flex items-center space-x-8 text-base'>
+              <Link href='/' className=' py-3 underline-animation'>
+                Home
+              </Link>
+              <Link href='/about-us' className='py-3 underline-animation'>
+                About Us
+              </Link>
+              <Link href='/services' className='py-3 underline-animation'>
+                Our Services
+              </Link>
+              <Link href='/projects' className=' py-3 underline-animation'>
+                Projects
+              </Link>{' '}
+              <Link href='/process' className=' py-3 underline-animation'>
+                Process
+              </Link>
+              <Link href='/contact-us' className=' py-3 underline-animation'>
+                Contact Us
+              </Link>
             </div>
+            <Link href={'/contact-us'} className='flex justify-end'>
+            <button className='border-2 border-primary p-2 py-3 text-primary font-bold capitalize rounded-lg hover:bg-primary hover:text-white duration-300'>get free quote</button>
+            </Link>
+
           </div>
 
           {/* Mobile Toggle Button */}
@@ -134,6 +110,9 @@ export default function Navbar() {
             >
               Projects
             </Link>
+            <Link href='/process' className=' py-3 underline-animation'>
+                Process
+              </Link>
             <Link
               href='/contact-us'
               className='text-base font-medium border-b w-full text-start py-3'

@@ -16,7 +16,7 @@ export default function ServiceCard({ name, desc }) {
 
         <p>{desc}</p>
 
-        <button className='bg-white text-primary font-medium w-max text-xs p-2'>Read More</button>
+        <button className='bg-white text-primary font-medium w-max text-xs p-2 rounded-sm'>Read More</button>
       </div>
     </div>
   );
