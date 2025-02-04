@@ -52,7 +52,7 @@ export default function Testimonials() {
 
           </Swiper>
       </div>
-      <div className='w-1/2 flex justify-center'>
+      <div className='w-1/2 flex justify-center py-4'>
       <Image src={'/images/construction workers.png'} alt='workers img' width={600} height={600} />
       </div>
     </div>

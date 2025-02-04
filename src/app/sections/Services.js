@@ -5,36 +5,37 @@ import ServiceCard from '../components/ServiceCard';
 export default function Services() {
   const services = [
     {
-      service: 'Architecture',
+      service: 'Roofing',
       description:
-        'You can dream, create, design, and build the most wonderful place in the world. But it requires people.',
+        'Protect your home with our durable, weather-resistant roofing solutions, designed for long-lasting performance and curb appeal. We specialize in roof installations, repairs, and replacements to keep your property safe and secure.',
     },
     {
-      service: 'Building & House',
+      service: 'Siding',
       description:
-        'You can dream, create, design, and build the most wonderful place in the world. But it requires people.',
+        'Enhance your home\'s exterior with our premium siding services, offering superior insulation and aesthetic charm. We provide expert siding installation and repairs for a polished, energy-efficient finish.',
     },
     {
-      service: 'Painting & Tiling',
+      service: 'Eavestrough',
       description:
-        'You can dream, create, design, and build the most wonderful place in the world. But it requires people.',
+        'Keep your home protected from water damage with our seamless eavestrough installation and maintenance services. Our efficient drainage solutions ensure your foundation stays dry and secure year-round.',
     },
     {
-      service: 'Interior Design',
+      service: 'Downspout',
       description:
-        'You can dream, create, design, and build the most wonderful place in the world. But it requires people.',
+        'Improve water flow and prevent leaks with our customized downspout installations tailored to your home\'s needs. We ensure optimal drainage to protect your roof and landscaping from water buildup.',
     },
     {
-      service: 'Area Renovation',
+      service: 'Soffit',
       description:
-        'You can dream, create, design, and build the most wonderful place in the world. But it requires people.',
+        'Boost ventilation and prevent moisture buildup with our high-quality soffit installations, blending function with modern design. Our soffit services enhance airflow while maintaining your home\'s aesthetic appeal.',
     },
     {
-      service: 'Road Construction',
+      service: 'Fascia',
       description:
-        'You can dream, create, design, and build the most wonderful place in the world. But it requires people.',
+        'Strengthen your roofline and improve your home\'s appearance with our durable fascia board installations. We offer custom solutions that protect against weather elements while enhancing curb appeal.',
     },
   ];
+  
 
   return (
     <div className='p-4 md:p-8 lg:p-12 2xl:p-20'>

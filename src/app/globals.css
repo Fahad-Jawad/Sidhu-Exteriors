@@ -118,11 +118,12 @@ body {
 .gradient-text {
   font-size: 80px; /* Adjust size as needed */
   font-weight: bold;
-  background: linear-gradient(to bottom, #02afef, rgba(2, 175, 239, 0.05));
+  background: linear-gradient(to bottom, #ed2229, rgba(237, 34, 41, 0.05));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+
 
 @keyframes spin-slow {
   from {
@@ -146,7 +147,7 @@ body {
   left: 0;
   height: 2px;
   width: 0;
-  background-color: #02afef;
+  background-color: #ed2229;
   transition: width 0.3s ease-in-out;
 }
 .underline-animation:hover::after {
@@ -161,14 +162,15 @@ body {
 }
 
 .contact-side {
-  background: rgb(46, 58, 151);
+  background: rgb(237, 34, 41);
   background: linear-gradient(
     90deg,
-    rgba(46, 58, 151, 1) 0%,
-    rgba(46, 58, 151, 0.7988445378151261) 62%,
-    rgba(46, 58, 151, 0.7008053221288515) 100%
+    rgba(237, 34, 41, 1) 0%,
+    rgba(237, 34, 41, 0.8) 62%,
+    rgba(237, 34, 41, 0.7) 100%
   );
 }
+
 
 .attached {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),

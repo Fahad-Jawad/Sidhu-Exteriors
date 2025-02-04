@@ -10,13 +10,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary:'#02AFEF',
-        primaryExtraLight:'#f7fcfe',
-        secondary:'#2E3A97'
+        primary:'#ed2229',
+        primaryExtraLight:'#fef8f8',
+        secondary:'#a5171c'
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
       },
+      fontSize:{
+        'xxs':"8px"
+      ,
+     },
     },
   },
   plugins: [],

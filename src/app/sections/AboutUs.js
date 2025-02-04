@@ -73,15 +73,15 @@ export default function AboutUs() {
 
           <div className='flex flex-col gap-4'>
             <div className='flex gap-4'>
-                <Image src={'/images/icons/ArrowRightWhite.svg'} alt='right arrow' width={24} height={24} className='w-7 h-7 rounded-full p-1 bg-secondary' />
+                <Image src={'/images/icons/ArrowRightWhite.svg'} alt='right arrow' width={24} height={24} className='w-7 h-7 rounded-full p-1 bg-black' />
                 <p className='text-base'>Quality Construction Solutions For Industries!</p>
             </div>
             <div className='flex gap-4'>
-                <Image src={'/images/icons/ArrowRightWhite.svg'} alt='right arrow' width={24} height={24} className='w-7 h-7 rounded-full p-1 bg-secondary' />
+                <Image src={'/images/icons/ArrowRightWhite.svg'} alt='right arrow' width={24} height={24} className='w-7 h-7 rounded-full p-1 bg-black' />
                 <p className='text-base'>Expertise & Innovation from a truly global company</p>
             </div>
             <div className='flex gap-4'>
-                <Image src={'/images/icons/ArrowRightWhite.svg'} alt='right arrow' width={24} height={24} className='w-7 h-7 rounded-full p-1 bg-secondary' />
+                <Image src={'/images/icons/ArrowRightWhite.svg'} alt='right arrow' width={24} height={24} className='w-7 h-7 rounded-full p-1 bg-black' />
                 <p className='text-base'>Highly Professional Staff, Accurate Testing Processes</p>
             </div>
           </div>

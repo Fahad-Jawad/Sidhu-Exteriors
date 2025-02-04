@@ -7,16 +7,20 @@ export default function Footer() {
     <div>
       <div className='bg-secondary rounded-tl-lg rounded-tr-lg pt-20 pb-10 flex px-4 md:px-8 lg:px-12 2xl:px-20 text-white z-10 flex-col lg:flex-row gap-8 lg:gap-0'>
         <div className='w-full lg:w-1/4 flex flex-col gap-5 items-center lg:items-start'>
-          <div className='flex justify-center w-3/4'>
-            {/* <Image
+          <div className='flex justify-center w-3/4 flex-col gap-4'>
+            <Image
               src={'/images/logo.png'}
               alt='Sidhu logo'
-              width={250}
-              height={250}
-              className='rounded-xl'
-            /> */}
-                    <p className='text-7xl font-bold text-white'>Logo</p>
-
+              width={550}
+              height={550}
+              className='rounded-xl h-full w-full'
+            />
+            <p className='text-xs'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              est minima provident odit, ratione eaque explicabo maxime
+              voluptatem ex iste delectus obcaecati aperiam accusamus neque
+              commodi minus? Porro, neque corrupti.
+            </p>
           </div>
         </div>
         <div className='w-full lg:w-1/4 flex flex-col gap-3 items-center lg:items-start'>
@@ -52,8 +56,7 @@ export default function Footer() {
               </div>
               <div className='flex flex-col gap-1'>
                 <h3 className='text-base font-bold '>Hotline</h3>
-                <p className='text-xs'>(403) 763-3074 (Office)</p>
-                <p className='text-xs'>403-714-1544 (Direct)</p>
+                <p className='text-xs'>(403) 966 - 6430</p>
               </div>
             </div>
             <div className='flex gap-5 items-center flex-col lg:flex-row text-center lg:text-start'>
@@ -67,7 +70,7 @@ export default function Footer() {
               </div>
               <div className='flex flex-col gap-1'>
                 <h3 className='text-base font-bold '>Official Email</h3>
-                <p className='text-xs'>info@sidhuexteriors.com</p>
+                <p className='text-xs'>Sidhuexteriors@gmail.com</p>
               </div>
             </div>
 

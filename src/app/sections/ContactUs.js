@@ -24,7 +24,7 @@ export default function ContactUs() {
               height={50}
             />
             <p className='text-base text-gray-100 mt-1'>Write To Us</p>
-            <p className='text-xl font-bold'>info@sidhuexteriors.com</p>
+            <p className='text-xl font-bold'>Sidhuexteriors@gmail.com</p>
           </div>
 
           <Image
